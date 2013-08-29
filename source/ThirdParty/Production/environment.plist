@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Production</key>
+        <dict>
+            <key>Server</key>
+            <array>
+                <dict>
+                    <key>port</key>
+                    <string>8080</string>
+
+                    <key>protocol</key>
+                    <string>http</string>
+
+                    <key>host</key>
+                    <string>172.16.17.180</string>
+
+                    <key>admin_password</key>
+                    <string></string>
+
+                    <key>type</key>
+                    <string>Apache Tomcat</string>
+
+                    <key>version</key>
+                    <string>7.0.x</string>
+
+                    <key>certificate</key>
+                    <string></string>
+
+                    <key>deploy_dir</key>
+                    <string>C:/</string>
+
+                    <key>remoteDeployment</key>
+                    <string>false</string>
+
+                    <key>name</key>
+                    <string>Server</string>
+
+                    <key>context</key>
+                    <string>mobilewidget</string>
+
+                    <key>admin_username</key>
+                    <string></string>
+
+                    <key>additional_context</key>
+                    <string></string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+</plist>

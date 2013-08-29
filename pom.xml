@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.photon.phresco</groupId>
+    <artifactId>IphnHyb-iphonehybrid</artifactId>
+    <packaging>xcode</packaging>
+    <name>IphnHyb-iphonehybrid</name>
+    <version>IphnHyb</version>
+    <build>
+        <sourceDirectory>/source</sourceDirectory>
+        <directory>do_not_checkin/target</directory>
+        <plugins>
+            <plugin>
+                <groupId>com.photon.phresco.plugins.xcode</groupId>
+                <artifactId>xcode-maven-plugin</artifactId>
+                <version>2.1.0.1003</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <xcodeProject>./source/Phresco.xcodeproj</xcodeProject>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.photon.phresco.plugins</groupId>
+                <artifactId>phresco-maven-plugin</artifactId>
+                <version>2.1.0.1003</version>
+                <extensions>true</extensions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.3</version>
+                <executions>
+                    <execution>
+                        <id>unpack-module</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <markersDirectory xmlns:ns2="http://maven.apache.org/POM/4.0.0" xmlns="">do_not_checkin/markers</markersDirectory>
+                            <artifactItems xmlns:ns2="http://maven.apache.org/POM/4.0.0" xmlns="">
+<artifactItem>
+    <groupId>jslibraries.files</groupId>
+    <artifactId>jslib_jquery</artifactId>
+    <version>1.6.2</version>
+    <type>zip</type>
+    <overWrite>false</overWrite>
+    <outputDirectory>${project.basedir}</outputDirectory>
+</artifactItem>
+<artifactItem>
+    <groupId>jslibraries.files</groupId>
+    <artifactId>jslib_plist_parser</artifactId>
+    <version>1.0</version>
+    <type>zip</type>
+    <overWrite>false</overWrite>
+    <outputDirectory>${project.basedir}</outputDirectory>
+</artifactItem>
+<artifactItem>
+    <groupId>modules.tech-iphone-hybrid.files</groupId>
+    <artifactId>cordova</artifactId>
+    <version>2.2</version>
+    <type>zip</type>
+    <overWrite>false</overWrite>
+    <outputDirectory>${project.basedir}/source/ThirdParty</outputDirectory>
+</artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>ci</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-clean-plugin</artifactId>
+                        <version>2.5</version>
+                        <executions>
+                            <execution>
+<id>default-clean</id>
+<phase>pre-clean</phase>
+<goals>
+    <goal>clean</goal>
+</goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <filesets>
+<fileset>
+    <directory>do_not_checkin/build</directory>
+    <includes>
+        <include>**/*</include>
+							  </includes>
+    <followSymlinks>false</followSymlinks>
+							</fileset>
+						  </filesets>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+    <repositories>
+        <repository>
+            <id>photon</id>
+            <url>http://172.16.17.226:8080/repository/content/groups/public/</url>
+        </repository>
+    </repositories>
+    <properties>
+        <phresco.unitTest.report.dir>/source/OCUnitReports</phresco.unitTest.report.dir>
+        <phresco.unitTest.testsuite.xpath>/testsuite</phresco.unitTest.testsuite.xpath>
+        <phresco.unitTest.testcase.path>/testcase</phresco.unitTest.testcase.path>
+        <phresco.functionalTest.selenium.tool>calabash</phresco.functionalTest.selenium.tool>
+        <phresco.functionalTest.report.dir>/source/test-reports</phresco.functionalTest.report.dir>
+        <phresco.functionalTest.dir>/source</phresco.functionalTest.dir>
+        <phresco.functionalTest.testsuite.xpath>/testsuite</phresco.functionalTest.testsuite.xpath>
+        <phresco.functionalTest.testcase.path>/testcase</phresco.functionalTest.testcase.path>
+        <phresco.module.source.dir>/source/ThirdParty</phresco.module.source.dir>
+        <phresco.code.validate.report>/do_not_checkin/static-analysis-report/</phresco.code.validate.report>
+    </properties>
+</project>

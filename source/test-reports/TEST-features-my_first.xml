@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="Running a test" skipped="0" tests="1" time="82.469542">
+<testcase classname="Running a test" name="Browse" time="82.469542">
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[Using installed ios-sim at /usr/local/bin/ios-sim
+-------------------------------------
+Auto detected APP_BUNDLE_PATH:
+
+APP_BUNDLE_PATH=/Users/chelladurai/Library/Developer/Xcode/DerivedData/Phresco-cmxtorluxiviglezqegjbpbanany/Build/Products/Debug-iphonesimulator/Phresco.app
+
+Please verify!
+If this is wrong please set it as APP_BUNDLE_PATH in features/support/launch.rb
+-------------------------------------
+Waiting at most 30 seconds for simulator (CONNECT_TIMEOUT)
+Retrying at most 2 times (MAX_CONNECT_RETRY)
+(1.) Start Simulator 6.0, iphone, for /Users/chelladurai/Library/Developer/Xcode/DerivedData/Phresco-cmxtorluxiviglezqegjbpbanany/Build/Products/Debug-iphonesimulator/Phresco.app
+Using installed ios-sim at /usr/local/bin/ios-sim
+Ping http://localhost:37265/...
+Ping http://localhost:37265/...
+Ping http://localhost:37265/...
+Fetch version http://localhost:37265/version...
+{"outcome"=>"SUCCESS", "app_name"=>"Phresco", "simulator_device"=>"iPhone", "iOS_version"=>"6.0", "app_version"=>"Unknown", "system"=>"x86_64", "app_id"=>"com.Photon.MobileApp", "version"=>"0.9.126", "simulator"=>"iPhone Simulator 358.4, iPhone OS 6.0 (iPhone/10A403)"}
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[/Users/chelladurai/.rvm/gems/ruby-1.9.3-p362/gems/sim_launcher-0.4.6/lib/sim_launcher/simulator.rb:45: warning: Insecure world writable dir /Users/chelladurai/Downloads/Phresco-Build-2.1.0.1003/framework/phresco-framework/bin/../tools/maven/bin in PATH, mode 040777
+]]>
+  </system-err>
+</testsuite>

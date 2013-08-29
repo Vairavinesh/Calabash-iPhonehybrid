@@ -1,0 +1,18 @@
+<environments>
+    <environment default="true" desc="Production Environment is used for Development purpose only" name="Production">
+        <Server desc="" name="Server">
+            <context>mobilewidget</context>
+            <deploy_dir>C:/</deploy_dir>
+            <admin_username/>
+            <additional_context/>
+            <port>8080</port>
+            <admin_password/>
+            <version>7.0.x</version>
+            <certificate/>
+            <type>Apache Tomcat</type>
+            <remoteDeployment>false</remoteDeployment>
+            <protocol>http</protocol>
+            <host>172.16.17.180</host>
+        </Server>
+    </environment>
+</environments>

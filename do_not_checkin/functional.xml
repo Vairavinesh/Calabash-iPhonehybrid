@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite failures="4" name="FunctionalTestSuite" success="5" tests="9">
+		<testcase name="Fail" result="Fail" time="17000">
+		<failure type="Failure">&lt;dict&gt;&lt;key&gt;LogType&lt;/key&gt;&lt;string&gt;Fail&lt;/string&gt;&lt;key&gt;Message&lt;/key&gt;&lt;string&gt;Fail&lt;/string&gt;&lt;key&gt;Screenshot&lt;/key&gt;&lt;string&gt;E9232844-6D1F-499B-B26C-C14B09AC9C69&lt;/string&gt;&lt;key&gt;Timestamp&lt;/key&gt;&lt;string&gt;Tue Feb 26 14:02:05 GMT+05:30 2013&lt;/string&gt;&lt;key&gt;Type&lt;/key&gt;&lt;string&gt;7&lt;/string&gt;&lt;/dict&gt;</failure>
+		</testcase>
+		<testcase name="MovieandMusicTest" result="Error" time="0">
+		<error type="Exception">&lt;dict&gt;&lt;key&gt;LogType&lt;/key&gt;&lt;string&gt;Error&lt;/string&gt;&lt;key&gt;Message&lt;/key&gt;&lt;string&gt;MovieandMusicTest&lt;/string&gt;&lt;key&gt;Screenshot&lt;/key&gt;&lt;string&gt;DCB74802-A44F-486E-839C-AD410A05E874&lt;/string&gt;&lt;key&gt;Timestamp&lt;/key&gt;&lt;string&gt;Tue Feb 26 14:02:05 GMT+05:30 2013&lt;/string&gt;&lt;key&gt;Type&lt;/key&gt;&lt;string&gt;3&lt;/string&gt;&lt;/dict&gt;</error>
+		</testcase>
+		<testcase name="Fail" result="Fail" time="68000">
+		<failure type="Failure">&lt;dict&gt;&lt;key&gt;LogType&lt;/key&gt;&lt;string&gt;Fail&lt;/string&gt;&lt;key&gt;Message&lt;/key&gt;&lt;string&gt;Fail&lt;/string&gt;&lt;key&gt;Screenshot&lt;/key&gt;&lt;string&gt;6A5FD7CE-F15B-4CAB-94B9-38187B12E2FD&lt;/string&gt;&lt;key&gt;Timestamp&lt;/key&gt;&lt;string&gt;Tue Feb 26 14:03:13 GMT+05:30 2013&lt;/string&gt;&lt;key&gt;Type&lt;/key&gt;&lt;string&gt;7&lt;/string&gt;&lt;/dict&gt;</failure>
+		</testcase>
+		<testcase name="TelvisionTest" result="Error" time="0">
+		<error type="Exception">&lt;dict&gt;&lt;key&gt;LogType&lt;/key&gt;&lt;string&gt;Error&lt;/string&gt;&lt;key&gt;Message&lt;/key&gt;&lt;string&gt;TelvisionTest&lt;/string&gt;&lt;key&gt;Screenshot&lt;/key&gt;&lt;string&gt;A53E3DCA-F0E1-400F-97BA-3F3143B8267B&lt;/string&gt;&lt;key&gt;Timestamp&lt;/key&gt;&lt;string&gt;Tue Feb 26 14:03:13 GMT+05:30 2013&lt;/string&gt;&lt;key&gt;Type&lt;/key&gt;&lt;string&gt;3&lt;/string&gt;&lt;/dict&gt;</error>
+		</testcase>
+		<testcase name="ComputerTest" result="Pass" time="47000"/>
+		<testcase name="MobilePhoneTest" result="Pass" time="32000"/>
+		<testcase name="AudioDeviceTest" result="Pass" time="33000"/>
+		<testcase name="CameraTest" result="Pass" time="35000"/>
+		<testcase name="TabletTest" result="Pass" time="39000"/>
+	</testsuite>
+</testsuites>
